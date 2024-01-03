@@ -1,0 +1,218 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 5px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-container{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+    z-index: 999;
+    position:sticky;
+    top: 0;
+}
+
+.highlight a{
+    text-decoration: none
+}
+
+.highlight h1{
+    font-family: 'Dancing Script',sans-serif; 
+    text-decoration: none;
+    white-space: nowrap;
+    color: blue;
+    padding: 0px 50px;
+    font-weight: 600;
+}
+
+#nama{
+    font-size: 20px;
+    color: blue;
+}
+
+.nav-list{
+    padding: 0px 50px;
+}
+
+.nav-list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem 1rem;
+    padding-left: 0px;
+}
+
+#link{
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+.nav-list li{
+    font-family: 'Alegreya SC',sans-serif; 
+    list-style-type: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 999px;
+    border: .5px solid black;
+}
+
+.nav-list li:hover a{
+    background-color: #d6e6f7;
+    border: .5px solid blue;
+    color: blue;
+}
+
+.nav-list li a.active{
+    background-color: #d6e6f7;
+    border: .5px solid blue;
+    color: blue;
+}
+
+main{
+    padding: 20px 50px;
+    text-align: center;
+    font-family: 'Quicksand',sans-serif;
+}
+
+.title{
+    padding: 50px 0px;
+    border-bottom: .5px double blue;
+    border-top: .5px double blue;;
+}
+
+.title h1{
+    margin-bottom: 0;
+    color: blue;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.title p{
+    margin-top: 10px;
+    padding: 0px 120px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.title-button{
+    display: flex;
+    flex-direction: row;
+}
+
+.title button{
+    font-family: 'Quicksand',sans-serif;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: blue;
+    font-weight: 400;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 255, 0.63);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.title span{
+    font-weight: 500;
+}
+
+.title button:hover{
+    background-color: rgba(0, 0, 255, 0.66);
+    border: 1.5px solid rgba(0, 0, 255, 0.66);
+    color: white;
+}
+
+.title table{
+    margin: 0 auto;
+    width: 22%;
+    font-size: 16px;
+}
+
+.content{
+    text-align: center;
+    border-bottom: .5px solid blue;
+    padding-bottom: 50px;
+}
+
+.content h2{
+    margin-top: 50px; 
+    margin-bottom: 15px;
+    color: blue;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.info {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    margin: 0px 150px;
+    margin-bottom: 30px;
+    padding: 2px;
+    text-align: justify;
+}
+
+.info p{
+    padding-left: 15px;
+}
+
+.implementation{
+    margin: 0px 150px
+}
+
+.implementation h3{
+    font-size: 20px;
+    color: blue;
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 5px 5px 5px 15px;
+    text-align: justify;
+    border: .5px solid blue;
+}
+
+.implementation-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.last-desc{
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+footer {
+    padding: 5px;
+    color: black;
+    text-align: center;
+    font-family: 'Alegreya SC',sans-serif; 
+  }  
+
+

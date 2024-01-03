@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio of Shalfienna Alya Khansa</title>
+    <link rel="icon" type="image/x-icon" href="img/portfolio.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Arima&family=Dancing+Script:wght@400;600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header id="header" class="navbar-container">
+      <div class="highlight">
+        <a href="#" id="homeReset">
+          <h1 id="nama">Shalfienna Alya Khansa</h1>
+        </a>
+      </div>
+      <nav class="nav-list active" id="navigation">
+        <ul id="link">
+          <li><a href="#home">About</a></li>
+          <li><a href="#professional">Professional</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="profile-intro">
+        <h1>Hi, I'm Fienna.<br /><span id="typed-text"></span></h1>
+      </div>
+      <script>
+        const text = "I'm a Fresh Graduate with a strong focus on technology and innovation";
+        const typedTextElement = document.getElementById("typed-text");
+        let index = 0;
+
+        function typeText() {
+          if (index < text.length) {
+            typedTextElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeText, 30); // Waktu jeda antara setiap karakter (50ms)
+          }
+        }
+
+        typeText(); // Panggil fungsi untuk mulai mengetik teks
+      </script>
+      <article id="home">
+        <img src="img/profile2.jpg" alt="Shalfienna Alya Khansa" />
+        <div class="about-me card-profile">
+          <h1>About The Author</h1>
+          <p>
+            An enthusiast in software engineering and technology with a solid educational background in Biomedical Engineering. Experience developing an Android application for a university thesis with capabilities to extract audio from a user's phone, playback the audio, and visualize the signal in graphs. Alongside the technical specialization, have expertise in communication and team management
+            skills by contributing to several organizations. Continuously seeking opportunities to develop a good work ethic and professional networking.
+          </p>
+          <button>Download CV here →</button>
+        </div>
+      </article>
+
+      <article id="professional">
+        <div class="professional-intro">
+          <h1>What I Do?</h1>
+        </div>
+        <header class="what-i-do">
+          <div class="card">
+            <h2>Frontend Developer</h2>
+            <img src="img/software.png" alt="Front End Developer" />
+            <p>I started studying mobile development in early 2023 to complete my thesis responsibilities, which I should make an Android app, and gratefully, I got an A for my university thesis.</p>
+          </div>
+          <div class="card">
+            <h2>Machine Learning Engineer</h2>
+            <img src="img/software.png" alt="Front End Developer" />
+            <p>I started studying mobile development in early 2023 to complete my thesis responsibilities, which I should make an Android app, and gratefully, I got an A for my university thesis.</p>
+          </div>
+          <div class="card">
+            <h2>Android Developer</h2>
+            <img src="img/phone.png" alt="Android Developer" />
+            <p>I started studying mobile development in early 2023 to complete my thesis responsibilities, which I should make an Android app, and gratefully, I got an A for my university thesis.</p>
+          </div>
+        </header>
+
+        <section id="Skill">
+          <div>
+            <img src="img/html.png" alt="HTML" />
+            <figcaption>HTML</figcaption>
+          </div>
+          <div>
+            <img src="img/css.png" alt="CSS" />
+            <figcaption>CSS</figcaption>
+          </div>
+          <div>
+            <img src="img/js.png" alt="Javascript" />
+            <figcaption>Javascript</figcaption>
+          </div>
+          <div>
+            <img src="img/python.png" alt="Python" />
+            <figcaption>Python</figcaption>
+          </div>
+          <div>
+            <img src="img/kotlin.png" alt="Kotlin" />
+            <figcaption>Kotlin</figcaption>
+          </div>
+        </section>
+      </article>
+
+      <article id="project">
+        <div class="project-intro">
+          <h1>Projects</h1>
+          <div class="bar-item" id="tab">
+            <h2 role="button" class="bar-item-button active" onclick="openProject('frontend')">Front-End</h2>
+            <h2 role="button" class="bar-item-button" onclick="openProject('machine')">Machine Learning</h2>
+            <h2 role="button" class="bar-item-button" onclick="openProject('android')">Android</h2>
+          </div>
+          <div id="frontend" class="projectTab">
+            <section class="project-content">
+              <h3>BookShelf Web</h3>
+              <p>
+                HThe Bookshelf App is the final assignment project of the Belajar Membuat Front-End Web untuk Pemula course from Dicoding.com, with the Front-End learning path. The app is made in a form of a website with the ability to manage data using DOM and Web Storage. The Website allows users to manipulate the Document Object Model (DOM) using Javascript by adding book data from the book
+                form and switching the data between current reading books, finished books, and top favorite books. The website then adds events to create interactivity on the HTML elements. The website uses the API browser to store book data in web storage, particularly local web storage.
+              </p>
+              <div class="lang">
+                <p>Language:</p>
+                <div style="display: flex; flex-direction: row; gap: 5px">
+                  <img src="img/html.png" alt="HTML" />
+                  <img src="img/css.png" alt="CSS" />
+                  <img src="img/js.png" alt="Javascript" />
+                </div>
+              </div>
+              <button id="bookshelf-button" onclick="openBookshelf()">Details →</button>
+              <button id="bookshelf-button" onclick="demoBookshelf()">Website Demo →</button>
+            </section>
+          </div>
+          <div id="machine" class="projectTab" style="display: none">
+            <section class="project-content">
+              <h3>FreshSnap - Bangkit Academy</h3>
+              <p>
+                FreshSnap is a shopping companion application expected to help users detect the quality of fruits and vegetables by simply capturing pictures through the camera or uploading pictures stored in the smartphone gallery. After the user captures or uploads the image of a fruit or vegetable, this application will predict the freshness percentage of the fruits and vegetables, how to keep
+                them, and food references based on the prediction. The application also added a location information feature so that all users can find out which market has good quality ingredients and which has bad ones.
+              </p>
+              <div class="lang">
+                <p>Language:</p>
+                <div>
+                  <img src="img/python.png" alt="Python" />
+                  <figcaption>Python</figcaption>
+                </div>
+              </div>
+              <button onclick="openFreshSnap()">Details →</button>
+            </section>
+          </div>
+          <div id="android" class="projectTab" style="display: none">
+            <section class="project-content">
+              <h3>HeartTune - Heart Sound Identification App</h3>
+              <p>
+                HeartTune is an electronic stethoscope that can connect to Android device applications for signal processing producing first and second heart sound detection. this device was designed utilizing an affordable stethoscope, ranging from Rp.30,000 to Rp.60,000, and transformed into an electronic stethoscope, and has been certified with a creation registration letter authenticated by
+                the Ministry of Law and Human Rights of the Republic of Indonesia.
+              </p>
+              <div class="lang">
+                <p>Language:</p>
+                <div>
+                  <img src="img/kotlin.png" alt="Kotlin" />
+                  <figcaption>Kotlin</figcaption>
+                </div>
+              </div>
+              <button onclick="openHeartTune()">Details →</button>
+            </section>
+            <section class="project-content">
+              <h3>GitHub Search App - Dicoding Course Project</h3>
+              <p>GitHub Search App is the first assignment of dicoding.com 'Belajar Fundamental Aplikasi Android' from the Android developer learning path. This application implements the WebAPI Networking using LoopJ and Parsing JSON</p>
+              <div class="lang">
+                <p>Language:</p>
+                <div>
+                  <img src="img/kotlin.png" alt="Kotlin" />
+                  <figcaption>Kotlin</figcaption>
+                </div>
+              </div>
+              <button onclick="openGithub()">Details →</button>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article id="certification">
+        <div class="certification">
+          <div class="certification-heading">
+            <h1>Certifications</h1>
+            <div class="certification-item" id="tab-certification">
+              <h2 role="button" class="bar-certification-button active" onclick="openCertif('front-Certification')">Front-End</h2>
+              <h2 role="button" class="bar-certification-button" onclick="openCertif('machine-Certification')">Machine Learning</h2>
+              <h2 role="button" class="bar-certification-button" onclick="openCertif('android-Certification')">Android</h2>
+            </div>
+          </div>
+
+          <div class="certification-body">
+            <div id="front-Certification" class="certification-content">
+              <div class="item-explain">
+                <div class="container">
+                  <img src="img/pemrograman-web_Page_1.jpg" height="200px" />
+                  <div class="overlay" id="imgWeb">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Belajar Dasar Pemrograman Web</h2>
+                <h3>Dicoding</h3>
+                <h4>Learning Path: Front End Web</h4>
+                <h4>
+                  Final Project Rating: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </h4>
+                <p class="item-review">Reviewer Comment:</p>
+                <p>"Good Job, kamu sudah membuat website yang menarik dan sangat bagus. Jangan pernah puas yaa, asah terus skill kamu, dan tetap semangat.^^"</p>
+              </div>
+              <div id="web-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/pemrograman-web.pdf" class="modal-content" type="application/pdf" id="pdf01" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain">
+                <div class="container">
+                  <img src="img/javascript_Page_1.jpg" height="200px" />
+                  <div class="overlay" id="imgJavascript">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Belajar Dasar Pemrograman JavaSript</h2>
+                <h3>Dicoding</h3>
+                <h4>Learning Path: Front End Web</h4>
+                <h4 style="color: red">Tidak Terdapat Final Project</h4>
+              </div>
+              <div id="javascript-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/sertifikat_course_256_3548728_061123105150.pdf" class="modal-content" type="application/pdf" id="pdf02" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain">
+                <div class="container">
+                  <img src="img/frontend-pemula_Page_1 - Copy.jpg" height="200px" />
+                  <div class="overlay" id="imgFrontend">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Belajar Membuat Front-End Web untuk Pemula</h2>
+                <h3>Dicoding</h3>
+                <h4>Learning Path: Front End Web</h4>
+                <h4>
+                  Final Project Rating: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </h4>
+                <p class="item-review">Reviewer Comment:</p>
+                <p>"Aplikasi sudah sangat baik, improvisasi yang dilakukan menunjukan bahwa kamu sudah menguasai DOM"</p>
+              </div>
+              <div id="frontend-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/frontend-pemula.pdf" class="modal-content" type="application/pdf" id="pdf03" width="100%" height="500px" />
+              </div>
+            </div>
+            <div id="machine-Certification" class="certification-content" style="display: none">
+              <div class="item-explain" style="height: 350px">
+                <div class="container">
+                  <img src="img/IT Automation Python.jpg" height="200px" />
+                  <div class="overlay" id="imgPython" style="left: 0px; width: 258.82px">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>IT Automation With Python</h2>
+                <h3>Coursera - Google</h3>
+                <h4>Learning Path: Machine Learning</h4>
+                <h4>Final Project Rating: 99/100</h4>
+              </div>
+              <div id="python-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/IT Automation Python.pdf" class="modal-content" type="application/pdf" id="pdf04" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain" style="height: 350px">
+                <div class="container">
+                  <img src="img/mathematics for machine learning.jpg" height="200px" />
+                  <div class="overlay" id="imgMath" style="left: 0px; width: 258.82px">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Mathematics for Machine Learning</h2>
+                <h3>Coursera - Imperial College London</h3>
+                <h4>Learning Path: Machine Learning</h4>
+                <h4>Final Project Rating: 97/100</h4>
+              </div>
+              <div id="math-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/mathematics for machine learning.pdf" class="modal-content" type="application/pdf" id="pdf05" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain" style="height: 350px">
+                <div class="container">
+                  <img src="img/Tensorflow Data and Deployment.jpg" height="200px" />
+                  <div class="overlay" id="imgTensoflow" style="left: 0px; width: 258.82px">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Tensorflow: Data and Deployment</h2>
+                <h3>Coursera - Google</h3>
+                <h4>Learning Path: Machine Learning</h4>
+                <h4>Final Project Rating: 100/100</h4>
+              </div>
+              <div id="tensorflow-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/Tensorflow Data and Deployment.pdf" class="modal-content" type="application/pdf" id="pdf06" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain" style="height: 350px">
+                <div class="container">
+                  <img src="img/Deeplearning AI.jpg" height="200px" />
+                  <div class="overlay" id="imgStructuring" style="left: 0px; width: 258.82px">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Structuring Machine Learning Projects</h2>
+                <h3>Coursera - DeepLearning.AI</h3>
+                <h4>Learning Path: Machine Learning</h4>
+                <h4>Final Project Rating: 95/100</h4>
+              </div>
+              <div id="structuring-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/Deeplearning AI.pdf" class="modal-content" type="application/pdf" id="pdf07" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain" style="height: 350px">
+                <div class="container">
+                  <img src="img/Deeplearning AI Tensorflow Developer.jpg" height="200px" />
+                  <div class="overlay" id="imgProfessional" style="left: 0px; width: 258.82px">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Tensorflow Developer Professional Certificate</h2>
+                <h3>Coursera - DeepLearning.AI</h3>
+                <h4>Learning Path: Machine Learning</h4>
+                <h4>Final Project Rating: 97/100</h4>
+              </div>
+              <div id="professional-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/Deeplearning AI Tensorflow Developer.pdf" class="modal-content" type="application/pdf" id="pdf08" width="100%" height="500px" />
+              </div>
+            </div>
+
+            <div id="android-Certification" class="certification-content" style="display: none">
+              <div class="item-explain" style="height: 560px">
+                <div class="container">
+                  <img src="img/kotlin_Page_1.jpg" height="200px" />
+                  <div class="overlay" id="imgKotlin">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Memulai Pemrograman dengan Kotlin</h2>
+                <h3>Dicoding</h3>
+                <h4>Learning Path: Android</h4>
+                <h4>
+                  Final Project Rating: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </h4>
+                <p class="item-review">Reviewer Comment:</p>
+                <p style="color: red">No Review</p>
+              </div>
+              <div id="kotlin-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/kotlin.pdf" class="modal-content" type="application/pdf" id="pdf09" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain" style="height: 560px">
+                <div class="container">
+                  <img src="img/android-pemula_Page_1.jpg" height="200px" />
+                  <div class="overlay" id="imgAndroid">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+
+                <h2>Belajar Membuat Aplikasi Android untuk Pemula</h2>
+                <h3>Dicoding</h3>
+                <h4>Learning Path: Android</h4>
+                <h4>
+                  Final Project Rating: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </h4>
+                <p class="item-review">Reviewer Comment:</p>
+                <li>Mulailah menerapkan konsep Material Design ketika mengembangkan proyek Aplikasi, kunjungi www.material.io sebagai referensi.</li>
+                <li>Perhatikan kembali penerapan layout_width dan Constraint pada komponen yang kamu gunakan, supaya tampilan yang dihasilkan dapat lebih rapih</li>
+                <li>Perhatikan penerapan margin dan padding pada komponen, supaya tampilanmenjadi lebih rapih</li>
+                <li>Silakan pelajari kembali aturan bagaimana menyusun tampilan aplikasi menggunakan CardView</li>
+              </div>
+              <div id="android-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/android-pemula.pdf" class="modal-content" type="application/pdf" id="pdf10" width="100%" height="500px" />
+              </div>
+
+              <div class="item-explain" style="height: 560px">
+                <div class="container">
+                  <img src="img/pemrograman-solid_Page_1.jpg" height="200px" />
+                  <div class="overlay" id="imgSolid">
+                    <div class="text">Click For Fullscreen</div>
+                  </div>
+                </div>
+                <h2>Belajar Prinsip Pemrograman Solid</h2>
+                <h3>Dicoding</h3>
+                <h4>Learning Path: Android</h4>
+                <h4 style="color: red">Tidak Terdapat Final Project</h4>
+              </div>
+              <div id="solid-modal" class="modal">
+                <span class="close">&times;</span>
+                <embed src="img/pemrograman-solid.pdf" class="modal-content" type="application/pdf" id="pdf11" width="100%" height="500px" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+        <article id="contact">
+          <img src="img/foto.jpg" alt="Foto Formal Shalfienna" />
+          <div class="contact-opening">
+            <h2>You can call me Fienna!</h2>
+            <div class="contact-inti card-contact">
+              <li>
+                <a href="https://www.linkedin.com/in/shalfiennaalyak/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/fiennaalya" target="_blank"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@fiennaalya" target="_blank"><i class="fab fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@fiennaalya/" target="_blank"><i class="fab fa-youtube"></i></a>
+              </li>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </main>
+
+    <button onclick="topFunction()" id="buttonTop" title="Go to top">↑</button>
+
+    <footer>
+      <p>Portofolio of Shalfienna &#169; 2023, Shalfienna Alya Khansa</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
