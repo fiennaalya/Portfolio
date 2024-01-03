@@ -211,6 +211,10 @@ function openHeartTune() {
 function openGithub() {
   window.open("https://github.com/fiennaalya/Github-User-Android-App-Dicoding-Submission", "_blank");
 }
+
+function openCV() {
+  window.open("https://docs.google.com/document/d/1FX3rHKEu_Dkpgudm9LjtMENCVj3XYtVI7gaFZ_sIrpc/edit?usp=sharing", "_blank");
+}
 function openContacts() {
   window.location.href = "./frontend-project/contacts.html";
 }
